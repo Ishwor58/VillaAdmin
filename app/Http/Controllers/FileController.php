@@ -111,7 +111,7 @@ class FileController extends Controller
         $file->delete();
 
 
-        return redirect('admin/files')->with('message', 'Your data has been deleted');
+        return redirect('admin/files')->with('delete', 'Your data has been deleted');
         
     }
 }

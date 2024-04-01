@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Models\Carousel;
 use Illuminate\Http\Request;
-
 use App\Models\File ;
 
 
@@ -111,6 +110,6 @@ class CarouselController extends Controller
         $carousel->delete();
 
 
-        return redirect('admin/carousels')->with('message', 'Your data has been deleted');
+        return redirect('admin/carousels')->with('delete', 'Your data has been deleted');
     }
 }

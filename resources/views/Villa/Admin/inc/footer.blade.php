@@ -59,13 +59,19 @@
    <script async defer src="https://buttons.github.io/buttons.js"></script>
 
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-   {{-- <script type="text/javascript">
+   <script type="text/javascript">
     $(document).ready(function() {
         setTimeout(function() {
-            $("#alert").remove();
+            $(".alert").remove();
         }, 3000); // Remove alert after 3 seconds
     });
-</script> --}}
+
+       
+</script>
+
+
+
    </body>
    </html>

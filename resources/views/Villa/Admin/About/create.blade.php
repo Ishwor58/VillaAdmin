@@ -31,8 +31,9 @@
                         <small class="text-muted float-end">Merged input group</small>
                     </div>
                     <div class="card-body">
-                        <form method="POST" enctype="multipart/form-data" action="{{ route('carousels.store') }}">
+                        <form method="POST" enctype="multipart/form-data" action="{{ route('abouts.store') }}">
                             @csrf
+                          
                             <div class="row mb-3">
                                 <label class="col-sm-2 col-form-label" for="basic-icon-default-fullname">Title</label>
                                 <div class="col-sm-10">
@@ -46,19 +47,19 @@
                                     </div>
                                 </div>
                             </div>
+
                             <div class="row mb-3">
-                                <label class="col-sm-2 col-form-label" for="basic-icon-default-fullname">Location</label>
-                                <div class="col-sm-10">
-                                    <div class="input-group input-group-merge">
-                                        <span id="basic-icon-default-location" class="input-group-text">
-                                            <i class="fa fa-location-arrow" aria-hidden="true"></i>
-                                        </span>
-                                        <input type="text" class="form-control" id="basic-icon-default-location"
-                                            placeholder="location" aria-label="location"
-                                            aria-describedby="basic-icon-default-location" name="location" />
+                                    <label class="col-sm-2 form-label" for="basic-icon-default-description1">Description</label>
+                                    <div class="col-sm-10">
+                                        <div class="input-group input-group-merge">
+                                            <span id="basic-icon-default-description" class="input-group-text">
+                                            <i class="fa fa-file-o" style="margin-bottom:46px;"></i></span>
+                                            <textarea id="basic-icon-default-description" class="form-control" placeholder="description of the image"
+                                                aria-label="Hi, Do you have a moment to talk Joe?" aria-describedby="basic-icon-default-description" name="description" rows="3" cols="30"></textarea>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+
                             <div class="row mb-3">
                                 <label class="col-sm-2 col-form-label" for="basic-icon-default-img">Img</label>
                                 <div class="col-sm-10">

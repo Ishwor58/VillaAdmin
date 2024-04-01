@@ -2,6 +2,7 @@
 
 @section('container')
 
+
 <div class="container">
     @if(session('message'))
     {{-- <div class="alert alert-success" id="alert"> --}}
@@ -13,9 +14,6 @@
     {{-- </div> --}}
     @endif
 </div>
-
-
-
     <div class="content-wrapper">
         <!-- Content -->
 
@@ -31,8 +29,10 @@
                         <small class="text-muted float-end">Merged input group</small>
                     </div>
                     <div class="card-body">
-                        <form method="POST" enctype="multipart/form-data" action="{{ route('carousels.store') }}">
+                        <form method="POST" enctype="multipart/form-data"
+                            action="{{ route('abouts.update', $about->id) }}">
                             @csrf
+                            @method('PUT')
                             <div class="row mb-3">
                                 <label class="col-sm-2 col-form-label" for="basic-icon-default-fullname">Title</label>
                                 <div class="col-sm-10">
@@ -42,37 +42,42 @@
                                         </span>
                                         <input type="text" class="form-control" id="basic-icon-default-title"
                                             placeholder="title" aria-label="title"
-                                            aria-describedby="basic-icon-default-title" name="title" />
+                                            aria-describedby="basic-icon-default-title" name="title"
+                                            value="{{ $about->title }}" />
                                     </div>
                                 </div>
                             </div>
                             <div class="row mb-3">
-                                <label class="col-sm-2 col-form-label" for="basic-icon-default-fullname">Location</label>
-                                <div class="col-sm-10">
-                                    <div class="input-group input-group-merge">
-                                        <span id="basic-icon-default-location" class="input-group-text">
-                                            <i class="fa fa-location-arrow" aria-hidden="true"></i>
-                                        </span>
-                                        <input type="text" class="form-control" id="basic-icon-default-location"
-                                            placeholder="location" aria-label="location"
-                                            aria-describedby="basic-icon-default-location" name="location" />
+                                    <label class="col-sm-2 form-label" for="basic-icon-default-description1">Description</label>
+                                    <div class="col-sm-10">
+                                        <div class="input-group input-group-merge">
+                                            <span id="basic-icon-default-description" class="input-group-text">
+                                            <i class="fa fa-file-o" style="margin-bottom:46px;"></i></span>
+                                            <textarea id="basic-icon-default-description" class="form-control" placeholder="description of the image"
+                                                aria-label="Hi, Do you have a moment to talk Joe?" aria-describedby="basic-icon-default-description" name="description" 
+                                                
+                                                
+                                                rows="3" cols="30"> {{ $about->description}}  </textarea>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
                             <div class="row mb-3">
                                 <label class="col-sm-2 col-form-label" for="basic-icon-default-img">Img</label>
                                 <div class="col-sm-10">
                                     <div class="input-group mb-3 col">
 
-                                        <input id="imagebox" type="text" class="form-control" disabled name="img"
-                                            readonly>
+                                        <input id="imagebox" type="text" class="form-control" name="img"
+                                            @readonly('true') value="{{ $about->img }}">
 
                                         <button type="button" class="btn btn-primary btn-md" data-bs-toggle="modal"
                                             data-bs-target="#modalId">
                                             Choose Image
                                         </button>
                                     </div>
-
+                                    <a href="{{ asset('uploads/' . $about->img) }}" target="_blank">
+                                        <img src="{{ asset('uploads/' . $about->img) }}" alt="img" width="50px"
+                                            height="50px">
+                                    </a>
                                     <div class="mb-3">
                                         <!-- Modal trigger button -->
                                         <!-- Modal Body -->
@@ -119,7 +124,8 @@
                                                         <button type="button" class="btn btn-secondary"
                                                             data-bs-dismiss="modal">Close</button>
                                                         <button type="button" class="btn btn-primary"
-                                                            data-bs-dismiss="modal" onclick=" firstFunction()">Save</button>
+                                                            data-bs-dismiss="modal"
+                                                            onclick=" firstFunction()">Save</button>
                                                     </div>
                                                 </div>
                                             </div>
