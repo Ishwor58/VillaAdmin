@@ -1,0 +1,5 @@
+@include ('Villa.Admin.inc.header')
+@include ('Villa.Admin.inc.sidebar')
+@include ('Villa.Admin.inc.navbar')
+@yield ('container')
+@include ('Villa.Admin.inc.footer')
