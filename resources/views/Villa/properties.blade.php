@@ -67,10 +67,10 @@
       <div class="row properties-box">
         <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 adv">
           <div class="item">
-            <a href="property-details.html"><img src="assets/images/property-01.jpg" alt=""></a>
+            <a href="property-details"><img src="{{asset ('frontend/assets/images/property-01.jpg')}}" alt=""></a>
             <span class="category">Luxury Villa</span>
             <h6>$2.264.000</h6>
-            <h4><a href="property-details.html">18 Old Street Miami, OR 97219</a></h4>
+            <h4><a href="property-details">18 Old Street Miami, OR 97219</a></h4>
             <ul>
               <li>Bedrooms: <span>8</span></li>
               <li>Bathrooms: <span>8</span></li>
@@ -79,16 +79,16 @@
               <li>Parking: <span>6 spots</span></li>
             </ul>
             <div class="main-button">
-              <a href="property-details.html">Schedule a visit</a>
+              <a href="property-details">Schedule a visit</a>
             </div>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 str">
           <div class="item">
-            <a href="property-details.html"><img src="assets/images/property-02.jpg" alt=""></a>
+            <a href="property-details"><img src="{{asset ('frontend/assets/images/property-02.jpg')}}" alt=""></a>
             <span class="category">Luxury Villa</span>
             <h6>$1.180.000</h6>
-            <h4><a href="property-details.html">54 New Street Florida, OR 27001</a></h4>
+            <h4><a href="property-details">54 New Street Florida, OR 27001</a></h4>
             <ul>
               <li>Bedrooms: <span>6</span></li>
               <li>Bathrooms: <span>5</span></li>
@@ -103,7 +103,7 @@
         </div>
         <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 adv rac">
           <div class="item">
-            <a href="property-details.html"><img src="assets/images/property-03.jpg" alt=""></a>
+            <a href="property-details.html"><img src="{{ asset ('frontend/assets/images/property-03.jpg')}}" alt=""></a>
             <span class="category">Luxury Villa</span>
             <h6>$1.460.000</h6>
             <h4><a href="property-details.html">26 Mid Street Portland, OR 38540</a></h4>
@@ -121,7 +121,7 @@
         </div>
         <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 str">
           <div class="item">
-            <a href="property-details.html"><img src="assets/images/property-04.jpg" alt=""></a>
+            <a href="property-details.html"><img src="{{ asset ('frontend/assets/images/property-04.jpg')}}" alt=""></a>
             <span class="category">Apartment</span>
             <h6>$584.500</h6>
             <h4><a href="property-details.html">12 Hope Street Portland, OR 12650</a></h4>
@@ -139,7 +139,7 @@
         </div>
         <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 rac str">
           <div class="item">
-            <a href="property-details.html"><img src="assets/images/property-05.jpg" alt=""></a>
+            <a href="property-details.html"><img src="{{asset ('frontend/assets/images/property-05.jpg')}}" alt=""></a>
             <span class="category">Penthouse</span>
             <h6>$925.600</h6>
             <h4><a href="property-details.html">34 Hope Street Portland, OR 42680</a></h4>
@@ -157,7 +157,7 @@
         </div>
         <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 rac adv">
           <div class="item">
-            <a href="property-details.html"><img src="assets/images/property-06.jpg" alt=""></a>
+            <a href="property-details.html"><img src="{{ asset ('frontend/assets/images/property-06.jpg')}}" alt=""></a>
             <span class="category">Modern Condo</span>
             <h6>$450.000</h6>
             <h4><a href="property-details.html">22 Hope Street Portland, OR 16540</a></h4>

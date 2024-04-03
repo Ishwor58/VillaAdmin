@@ -57,9 +57,9 @@ class FactsController extends Controller
      */
     public function show( $id)
     {
-        $facts = new Facts;
-        $facts = $facts->where('id', $id)->first();
-        return view('Villa.Admin.facts.show', compact('facts'));
+        $fact = new Facts;
+        $fact = $fact->where('id', $id)->first();
+        return view('Villa.Admin.facts.show', compact('fact'));
     }
 
     /**
@@ -67,9 +67,9 @@ class FactsController extends Controller
      */
     public function edit($id)
     {
-        $facts = new Facts;
-        $facts = $facts->where('id', $id)->first();
-        return view('Villa.Admin.facts.edit', compact('facts'));
+        $fact = new Facts;
+        $fact = $fact->where('id', $id)->first();
+        return view('Villa.Admin.facts.edit', compact('fact'));
     }
 
     /**
@@ -103,9 +103,9 @@ class FactsController extends Controller
     public function destroy($id)
     {
         //
-        $facts = new Facts;
-        $facts = $facts->where('id', $id)->first();
-        $facts->delete();
+        $fact = new Facts;
+        $fact = $fact->where('id', $id)->first();
+        $fact->delete();
        
         return redirect('admin/facts')->with('delete', 'Your data has been deleted');
     }

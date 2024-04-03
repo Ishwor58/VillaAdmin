@@ -12,7 +12,7 @@
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
                       <li><a href="/" class="active">Home</a></li>
-                      <li><a href="/properties">Properties</a></li>
+                      <li><a href="/properties" >Properties</a></li>
                       <li><a href="/property-details">Property Details</a></li>
                       <li><a href="/contact">Contact Us</a></li>
                       <li><a href="/schedule-visit"><i class="fa fa-calendar"></i> Schedule a visit</a></li>

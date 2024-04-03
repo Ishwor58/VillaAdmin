@@ -13,29 +13,29 @@
 
 <div class="content-wrapper">
     <div class="container-xxl flex-grow-1 container-p-y">
-        <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Carousel/</span> Details</h4>
+        <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">fact/</span> Details</h4>
 
         <div class="card mb-4">
             <div class="card-header">
-                <h5 class="mb-0">Carousel Details</h5>
+                <h5 class="mb-0">fact Details</h5>
             </div>
             <div class="card-body">
                 <div class="row mb-3">
+                    <label class="col-sm-2 col-form-label">No:</label>
+                    <div class="col-sm-10">
+                        <p>{{ $fact->no }}</p>
+                    </div>
+                </div>
+                <div class="row mb-3">
                     <label class="col-sm-2 col-form-label">Title:</label>
                     <div class="col-sm-10">
-                        <p>{{ $carousel->title }}</p>
+                        <p>{{ $fact->title }}</p>
                     </div>
                 </div>
                 <div class="row mb-3">
-                    <label class="col-sm-2 col-form-label">Location:</label>
+                   <label class="col-sm-2 col-form-label">Sub-title:</label>
                     <div class="col-sm-10">
-                        <p>{{ $carousel->location }}</p>
-                    </div>
-                </div>
-                <div class="row mb-3">
-                    <label class="col-sm-2 col-form-label">Image:</label>
-                    <div class="col-sm-10">
-                        <img src="{{ asset('uploads/' . $carousel->img) }}" alt="Carousel Image" width="200">
+                        <p>{{ $fact->sub_title }}</p>
                     </div>
                 </div>
             </div>
@@ -43,7 +43,7 @@
 
         <div class="row justify-content-end">
             <div class="col-sm-10">
-                <a href="{{ route('carousels.index') }}" class="btn btn-primary">Back to List</a>
+                <a href="{{ route('facts.index') }}" class="btn btn-primary">Back to List</a>
             </div>
         </div>
     </div>
