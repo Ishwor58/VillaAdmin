@@ -44,7 +44,7 @@
                                         
                                     </tr>
                                 </thead>
-                                <tbody class="table-border-bottom-0">
+                                <tbody class="table-border-bottom-2">
 
                                 @foreach ( $carousels as $carousel)
                                     
@@ -100,6 +100,14 @@
                                 </tbody>
                             </table>
                             {{ $carousels->links()}}
+                            
+                        <div class="bg-light   mt-3 mb-3 mx-5 px-4 text-end ">
+                        <div class="px-5 mx-4">
+                         <div class="px-4 mx-3">
+                              <a href="{{ route('carousels.create') }}" class="btn btn-primary btn-m "> Add <i class="fa fa-plus" style="font-size:14px;color:white; padding-left:1px;"> </i></a>
+                              </div>
+                              </div>
+                       </div>
                         </div>
                     </div>
                 </div>

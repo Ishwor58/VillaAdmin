@@ -76,7 +76,8 @@
                            <div class="row justify-content-end">
                                 <div class="col-sm-10">
 
-                                    <button type="submit" class="btn btn-primary">Send</button>
+                                    <button type="submit" class="btn btn-primary">Send</button> <br>  <br> 
+                                    <a href="{{ route('facts.index') }}" class="btn btn-primary">Back to List</a>
                                 </div>
                             </div>
                            

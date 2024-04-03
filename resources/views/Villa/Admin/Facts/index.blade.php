@@ -44,7 +44,7 @@
 
                                 </tr>
                             </thead>
-                            <tbody class="table-border-bottom-0">
+                            <tbody class="table-border-bottom-2">
 
                                 @foreach ( $facts as $fact)
 
@@ -97,6 +97,15 @@
                                 @endforeach
                             </tbody>
                         </table>
+
+                        
+                        <div class="bg-light   mt-3 mb-3 mx-5 px-4 text-end ">
+                        <div class="px-1 mx-5">
+                         <div class="px-5 mx-5">
+                              <a href="{{ route('facts.create') }}" class="btn btn-primary btn-m "> Add <i class="fa fa-plus" style="font-size:14px;color:white; padding-left:1px;"> </i></a>
+                              </div>
+                              </div>
+                       </div>
                         {{ $facts->links()}}
                     </div>
                 </div>
