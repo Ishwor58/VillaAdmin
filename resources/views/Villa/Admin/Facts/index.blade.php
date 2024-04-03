@@ -9,6 +9,7 @@
         <strong>{{ session('message') }}</strong>
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
+
     @elseif(session('delete'))
     <div class="alert alert-danger alert-dismissible fade show" role="alert">
         <strong>{{ session('delete') }}</strong>
@@ -36,38 +37,38 @@
                             <thead>
                                 <tr>
                                     <th>S.N</th>
+                                    <th>NO</th>
                                     <th>Title</th>
-                                    <th>Images</th>
+                                    <th>Sub-title</th>
+                                    <th>ACtions</th>
 
                                 </tr>
                             </thead>
                             <tbody class="table-border-bottom-0">
 
-                                
-
-
-                                @foreach ( $files as $file)
+                                @foreach ( $facts as $fact)
 
 
                                 <tr>
 
-                                    <td><i class=" fa-lg text-danger me-3"></i> {{ $loop->iteration }}
-                                    <td><i class=" fa-lg text-danger me-3"></i> {{ $file->title }}
+                                    <td><i class="  fa-lg text-danger me-3"></i> {{ $loop->iteration }}
+                                    <td><i class="  fa-lg text-danger me-3"></i> {{ $fact->no }}
+                                    </td>
+                                    <td><i class="  fa-lg text-danger me-3"></i> {{ $fact->title }}
                                     </td>
 
-                                    <td><a href="{{ asset ('uploads/'. $file->img)}} " target="_blank">
-                                            <img src="{{ asset ('uploads/'. $file->img)}}" alt="img" width="50px" height="50px"> <a>
+                                    <td><i class="  fa-lg text-danger me-3"></i> {{ $fact->sub_title }}
                                     </td>
                                     <td>
 
-                                        <a href="{{ route ('files.edit' , $file->id)}}" class="btn btn-sm btn-primary"> Edit </a>
-                                        <a href="{{ route ('files.show' , $file->id)}}" class="btn btn-sm btn-warning"> Show </a>
-                                        <a href="\" class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal{{$file->id}}"> Delete </a>
+                                        <a href="{{ route ('facts.edit' , $fact->id)}}" class="btn btn-sm btn-primary"> Edit </a>
+                                        <a href="{{ route ('facts.show' , $fact->id)}}" class="btn btn-sm btn-warning"> Show </a>
+                                        <a href="\" class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal{{$fact->id}}"> Delete </a>
 
 
 
                                         <!-- Modal -->
-                                        <div class="modal fade" id="exampleModal{{$file->id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal fade" id="exampleModal{{$fact->id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                             <div class="modal-dialog        ">
                                                 <div class="modal-content">
                                                     <div class="modal-header">
@@ -79,7 +80,7 @@
                                                     </div>
                                                     <div class="modal-footer">
 
-                                                        <form action="{{route('files.destroy', $file->id)}}" method="POST" enctype="multipart/form-data">
+                                                        <form action="{{route('facts.destroy', $fact->id)}}" method="POST" enctype="multipart/form-data">
                                                             @csrf
                                                             @method('delete')
 
@@ -94,11 +95,9 @@
 
                                 </tr>
                                 @endforeach
-
-                                
                             </tbody>
                         </table>
-                        {{ $files->links()}}
+                        {{ $facts->links()}}
                     </div>
                 </div>
             </div>

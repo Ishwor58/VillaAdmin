@@ -11,6 +11,6 @@ class Facts extends Model
     protected $fillable = [
         'no',
         'title',
-        'sub-title',
+        'sub_title',
     ];
 }

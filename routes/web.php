@@ -55,6 +55,7 @@ Route::prefix('admin')->middleware('auth')->group(function(){
     Route::resource('files', 'App\Http\Controllers\FileController');
     Route::resource('carousels', 'App\Http\Controllers\CarouselController');
     Route::resource('abouts', 'App\Http\Controllers\AboutController');
+    Route::resource('facts', 'App\Http\Controllers\FactsController');
 });
 
 
