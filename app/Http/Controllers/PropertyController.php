@@ -64,6 +64,9 @@ class PropertyController extends Controller
         $properties->img = $request->img;
         $properties->save();
 
+
+        
+
         return redirect('/admin/properties/create')->with('message', 'Succesfully stored');
 
       
@@ -76,7 +79,7 @@ class PropertyController extends Controller
      */
     public function show($id)
     {
-        $property = new Property();
+        $property = new Property;
         $property = $property->where('id', $id)->first();
         return view('Villa.Admin.property.show', compact('property'));
     }
@@ -128,7 +131,7 @@ class PropertyController extends Controller
         $properties->img = $request->img;
         $properties->save();
 
-        return redirect('/admin/properties/')->with('message', 'Succesfully updated');
+        return redirect('/admin/properties')->with('message', 'Succesfully updated');
     }
 
     /**

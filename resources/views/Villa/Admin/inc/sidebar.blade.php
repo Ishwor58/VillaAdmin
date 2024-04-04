@@ -189,4 +189,26 @@
             </li>
          
        
+
+             <li class="menu-item">
+              <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons bx bx-dock-top"></i>
+                <div data-i18n="Account Settings">Best deals</div>
+              </a>
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a href="{{route ('best_deals.create')}}" class="menu-link">
+                    <div data-i18n="Account">create</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="{{route ('best_deals.index')}}" class="menu-link">
+                    <div data-i18n="Notifications">index</div>
+                  </a>
+                </li>
+                
+              </ul>
+            </li>
+         
+       
         </aside>

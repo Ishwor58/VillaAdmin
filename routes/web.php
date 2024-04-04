@@ -57,6 +57,7 @@ Route::prefix('admin')->middleware('auth')->group(function(){
     Route::resource('abouts', 'App\Http\Controllers\AboutController');
     Route::resource('facts', 'App\Http\Controllers\FactsController');
     Route::resource('properties', 'App\Http\Controllers\PropertyController');
+    Route::resource('best_deals', 'App\Http\Controllers\BestDealController');
 });
 
 
