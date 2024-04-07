@@ -1,0 +1,31 @@
+.custom-select {
+    border: 1px solid whitesmoke;
+    background-color: #f6f6f6;
+    border-radius: 25px;
+    height: 42px;
+}
+.custom-select:focus {
+    outline: none !important;
+    border : 2px solid black; /* Ensure border remains black when focused */
+    box-shadow: none !important; /* Reset any box shadow */
+}
+
+.custom-select-option {
+    background-color:#f6f6f6;
+ 
+}
+
+.contact-page {
+    margin-top: 25px; /* Adjust this value as needed */
+}
+
+.facts {
+
+    padding-left: 4px; 
+    padding-right: 3px;
+    padding-top: 3px; 
+    padding-bottom: 1px;  
+    border:2.35px solid #718192; 
+    font-size:10px; 
+    border-radius: 1.5px;
+}

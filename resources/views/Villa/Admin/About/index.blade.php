@@ -80,12 +80,12 @@
                                                         Are you sure ?
                                                     </div>
                                                     <div class="modal-footer">
-
+                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                                                         <form action="{{route('abouts.destroy', $about->id)}}" method="POST" enctype="multipart/form-data">
                                                             @csrf
                                                             @method('delete')
 
-                                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                           
                                                             <button type="submit" class="btn btn-danger"> Delete </button>
                                                         </form>
                                                     </div>

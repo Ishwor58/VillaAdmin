@@ -9,7 +9,7 @@
           <h2>Hurry!<br>Get the Best Villa for you</h2>
         </div>
       </div>
-      <div class="item item-2">
+      <div class="item item-3">
         <div class="header-text">
           <span class="category">Melbourne, <em>Australia</em></span>
           <h2>Be Quick!<br>Get the best villa in town</h2>

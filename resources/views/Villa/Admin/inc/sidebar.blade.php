@@ -107,8 +107,8 @@
 
             <li class="menu-item">
               <a href="javascript:void(0);" class="menu-link menu-toggle">
-                <i class="menu-icon tf-icons bx bx-dock-top"></i>
-                <div data-i18n="Account Settings">Carousel</div>
+                <i class='menu-icon tf-icons bx bx-carousel'></i>
+                  <div data-i18n="Account Settings">Carousel</div>
               </a>
               <ul class="menu-sub">
                 <li class="menu-item">
@@ -129,7 +129,7 @@
           
             <li class="menu-item">
               <a href="javascript:void(0);" class="menu-link menu-toggle">
-                <i class="menu-icon tf-icons bx bx-dock-top"></i>
+                <i class='menu-icon tf-icons bx bx-info-square' ></i>
                 <div data-i18n="Account Settings">About</div>
               </a>
               <ul class="menu-sub">
@@ -150,8 +150,10 @@
             
             <li class="menu-item">
               <a href="javascript:void(0);" class="menu-link menu-toggle">
-                <i class="menu-icon tf-icons bx bx-dock-top"></i>
-                <div data-i18n="Account Settings">Facts</div>
+               {{-- <i class=' menu-icon bx bxl-facebook ' style="padding-left: -10px; border: 3px solid grey "></i> --}}
+               <div style="padding-left:2px; margin-right:-2px;">              
+                 <i class=" fa-solid fa-f facts"></i></div>
+                <div data-i18n="Account Settings " class="px-3">Facts</div>
               </a>
               <ul class="menu-sub">
                 <li class="menu-item">
@@ -170,7 +172,7 @@
 
              <li class="menu-item">
               <a href="javascript:void(0);" class="menu-link menu-toggle">
-                <i class="menu-icon tf-icons bx bx-dock-top"></i>
+                <i class="menu-icon tf-icons bx bx-building-house "></i>
                 <div data-i18n="Account Settings">Property</div>
               </a>
               <ul class="menu-sub">
@@ -192,7 +194,7 @@
 
              <li class="menu-item">
               <a href="javascript:void(0);" class="menu-link menu-toggle">
-                <i class="menu-icon tf-icons bx bx-dock-top"></i>
+                <i class="menu-icon tf-icons bx bxs-hot" style="color:#74879c"></i>
                 <div data-i18n="Account Settings">Best deals</div>
               </a>
               <ul class="menu-sub">
@@ -203,6 +205,25 @@
                 </li>
                 <li class="menu-item">
                   <a href="{{route ('best_deals.index')}}" class="menu-link">
+                    <div data-i18n="Notifications">index</div>
+                  </a>
+                </li>
+                
+              </ul>
+            </li>
+             <li class="menu-item">
+              <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons bx bx-cog"></i>
+                <div data-i18n="Account Settings">Site Configs</div>
+              </a>
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a href="{{route ('siteconfigs.create')}}" class="menu-link">
+                    <div data-i18n="Account">create</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="{{route ('siteconfigs.index')}}" class="menu-link">
                     <div data-i18n="Notifications">index</div>
                   </a>
                 </li>

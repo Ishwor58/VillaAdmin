@@ -18,7 +18,12 @@
     <link rel="stylesheet" href="{{ asset('frontend/assets/css/templatemo-villa-agency.css')}}">
     <link rel="stylesheet" href="{{ asset('frontend/assets/css/owl.css')}}">
     <link rel="stylesheet" href="{{ asset('frontend/assets/css/animate.css')}}">
-    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  
+    <link rel="stylesheet" href="{{ asset('frontend/assets/css/custom.css') }}">
+
 <!--
 
 TemplateMo 591 villa agency

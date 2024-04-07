@@ -37,7 +37,7 @@
                             <div class="col-sm-10">
                                 <div class="input-group input-group-merge">
                                     <div class="col-12">
-                                        <select class="form-select" id="basic-icon-default-type" name="type">
+                                        <select class="form-select text-secondary" id="basic-icon-default-type" name="type">
                                             <option selected> {{ $best_deal-> type }} </option>
                                             <option value="Apartments">Apartments</option>
                                             <option value="Villa house">Villa House</option>

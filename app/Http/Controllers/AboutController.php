@@ -96,7 +96,7 @@ class AboutController extends Controller
         $about->img = $request->img;
         $about->save();
 
-        return redirect('/admin/abouts')->with('message', 'Succesfully stored');
+        return redirect('/admin/abouts')->with('message', 'Succesfully updated');
     }
 
     /**

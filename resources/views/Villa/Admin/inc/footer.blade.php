@@ -65,7 +65,7 @@
     $(document).ready(function() {
         setTimeout(function() {
             $(".alert").remove();
-        }, 3000); // Remove alert after 3 seconds
+        }, 2000); // Remove alert after 3 seconds
     });
 
        
