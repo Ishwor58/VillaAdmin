@@ -16,6 +16,7 @@
 
 
 
+   
     <div class="content-wrapper">
         <!-- Content -->
 
@@ -142,6 +143,7 @@
                 </div>
             </div>
         </div>
+    </div>
         <script>
             function firstFunction() {
                 var x = document.querySelector('input[name=img]:checked').value;

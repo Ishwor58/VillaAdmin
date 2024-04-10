@@ -6,7 +6,7 @@
           <div class="app-brand demo">
             <a href="/admin/files" class="app-brand-link">
               <span class="app-brand-logo demo">
-                <svg
+                {{-- <svg
                   width="25"
                   viewBox="0 0 25 42"
                   version="1.1"
@@ -58,9 +58,11 @@
                       </g>
                     </g>
                   </g>
-                </svg>
+                </svg> --}}
+
+                <img src="{{asset ('assets/img/favicon/house.ico')}}" alt="" height="35px" width="35px">
               </span>
-              <span class="app-brand-text demo menu-text fw-bolder ms-2">Sneat</span>
+              <span class="app-brand-text demo  menu-text ms-2"> Admin</span>
             </a>
 
             <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
@@ -72,19 +74,20 @@
 
           <ul class="menu-inner py-1">
             <!-- Dashboard -->
-            <li class="menu-item active">
+            <li class="menu-item active ">
               <a href="{{route ('files.index')}}" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-home-circle"></i>
+                <i class="menu-icon tf-icons bx bxs-dashboard"></i>
+             
                 <div data-i18n="Analytics">Dashboard</div>
               </a>
             </li>
 
            
 
-            <li class="menu-header small text-uppercase">
-              <span class="menu-header-text">Pages</span>
+            <li class="menu-header small text-uppercase ">
+              <span class="menu-header-text  ">Pages</span>
             </li>
-            <li class="menu-item">
+            <li class="menu-item ">
               <a href="javascript:void(0);" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons bx bx-dock-top"></i>
                 <div data-i18n="Account Settings">File manager</div>

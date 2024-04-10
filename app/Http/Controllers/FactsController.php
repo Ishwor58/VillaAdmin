@@ -93,7 +93,7 @@ class FactsController extends Controller
         $facts->sub_title = $request->sub_title;
         $facts->save();
 
-        return redirect('/admin/facts/create')->with('message', 'Succesfully updated');
+        return redirect('/admin/facts')->with('message', 'Succesfully updated');
         
     }
 

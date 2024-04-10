@@ -91,7 +91,7 @@ class SiteConfigsController extends Controller
         $siteconfigs->site_value = $request->site_value;
         $siteconfigs->save();
 
-        return redirect('/admin/siteconfigs/create')->with('message', 'Succesfully updated');
+        return redirect('/admin/siteconfigs')->with('message', 'Succesfully updated');
     }
 
     /**

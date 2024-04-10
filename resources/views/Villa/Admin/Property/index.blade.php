@@ -22,7 +22,7 @@
             <div class="container ">
                 <div class="row">
                     <div class="col">
-                         <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Propertys/</span> Index </h4>
+                         <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Property/</span> Index </h4>
                     </div>
                     <div class="col text-end pt-2">
                         <a href="{{ route('properties.create') }}" class="btn btn-primary btn-m py-2  "> Add <i class="fa fa-plus"

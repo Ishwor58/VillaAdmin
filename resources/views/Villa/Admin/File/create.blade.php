@@ -34,7 +34,7 @@
                      
                     </div>
                     <div class="card-body">
-                        <form action="{{route('files.store')}}" class="row g-3 p-5 shadow m-3" method="POST" enctype="multipart/form-data">
+                        <form action="{{route('files.store')}}"  method="POST" enctype="multipart/form-data">
                             @csrf
                             <div class="row mb-3">
                                 <label class="col-sm-2 col-form-label" for="basic-icon-default-fullname">Title</label>
