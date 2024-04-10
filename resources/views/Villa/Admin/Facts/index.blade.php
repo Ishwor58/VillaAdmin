@@ -24,14 +24,23 @@
     <!-- Content wrapper -->
     <div class="content-wrapper">
         <!-- Content -->
-
+        
         <div class="container-xxl flex-grow-1 container-p-y">
-            <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Forms/</span> Horizontal
-                Layouts</h4>
+            <div class="container ">
+                <div class="row">
+                    <div class="col">
+                         <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Facts/</span> Index </h4>
+                    </div>
+                    <div class="col text-end pt-2">
+                        <a href="{{ route('facts.create') }}" class="btn btn-primary btn-m py-2  "> Add <i class="fa fa-plus"
+                                style="font-size:14px;color:white; padding-left:1px;"> </i></a>
+                    </div>
+                </div>
+            </div>
             <!-- Basic with Icons -->
             <div class="col-xxl">
-                <div class="card">
-                    <h5 class="card-header">Table Basic</h5>
+                <div class="card p-2">
+                 
                     <div class="table-responsive text-nowrap">
                         <table class="table">
                             <thead>
@@ -97,14 +106,8 @@
                         </table>
 
                         
-                        <div class="bg-light   mt-3 mb-3 mx-5 px-4 text-end ">
-                        <div class="px-1 mx-5">
-                         <div class="px-5 mx-5">
-                              <a href="{{ route('facts.create') }}" class="btn btn-primary btn-m "> Add <i class="fa fa-plus" style="font-size:14px;color:white; padding-left:1px;"> </i></a>
-                              </div>
-                              </div>
-                       </div>
-                        {{ $facts->links()}}
+                       <div>{{ $facts->links()}}</div>
+                        
                     </div>
                 </div>
             </div>

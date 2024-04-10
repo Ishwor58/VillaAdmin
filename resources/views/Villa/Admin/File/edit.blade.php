@@ -24,15 +24,13 @@
 
 
         <div class="container-xxl flex-grow-1 container-p-y">
-            <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Forms/</span> Horizontal
-                Layouts</h4>
+            <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">File Manger/</span> Edit</h4>
             <!-- Basic Layout & Basic with Icons -->
             <!-- Basic with Icons -->
             <div class="col-xxl">
                 <div class="card mb-4">
                     <div class="card-header d-flex align-items-center justify-content-between">
-                        <h5 class="mb-0">Upload title and image</h5>
-                        <small class="text-muted float-end">Merged input group</small>
+                        
                     </div>
                     <div class="card-body">
                         <form action="{{route('files.update' , $file->id)}}" class="row g-3 p-5 shadow m-3" method="POST" enctype="multipart/form-data">
@@ -53,16 +51,17 @@
                                 <label class="col-sm-2 col-form-label" for="basic-icon-default-company">IMG</label>
                                 <div class="col-sm-10">
                                     <div class="input-group input-group-merge">
-                                        <span id="basic-icon-default-company2" class="input-group-text"><i class="bx bx-buildings"></i></span>
-                                        <input type="file" id="basic-icon-default-company" class="form-control" placeholder="ACME Inc." aria-label="ACME Inc." aria-describedby="basic-icon-default-company2" 
-                                        name="img" 
-                                        value="{{ $file -> title }}"/>
-                                         <a href="{{ asset ('uploads/'. $file->img)}} " target="_blank">
-                                              <img src="{{ asset ('uploads/'. $file->img)}}" alt="img" width="50px"
-                                              height="50px"> <a>
+                                        <input type="file" id="basic-icon-default-company" class="form-control" placeholder="ACME Inc." aria-label="ACME Inc." aria-describedby="basic-icon-default-company2" name="img"/>
+                                        <a href="{{ asset('uploads/' . $file->img) }}" target="_blank">
+                                        <img src="{{ asset('uploads/' . $file->img) }}" alt="img" width="40px" height="40px">
+
+                                        </a>
+                                        <input type="text" class="form-control " readonly value="{{ "   " . $file->img }}" placeholder="Choose a file" aria-label="Selected file">
+
                                     </div>
                                 </div>
                             </div>
+                            
                             <!-- <div class="row mb-3">
                                     <label class="col-sm-2 col-form-label" for="basic-icon-default-email">Email</label>
                                     <div class="col-sm-10">

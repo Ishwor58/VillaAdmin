@@ -18,10 +18,20 @@
 
 <div class="content-wrapper">
     <div class="container-xxl flex-grow-1 container-p-y">
-        <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Property Management/</span> Best Deals List</h4>
+        <div class="container ">
+            <div class="row">
+                <div class="col">
+                     <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Best Deals/</span> Index </h4>
+                </div>
+                <div class="col text-end pt-2">
+                    <a href="{{ route('best_deals.create') }}" class="btn btn-primary btn-m py-2  "> Add <i class="fa fa-plus"
+                            style="font-size:14px;color:white; padding-left:1px;"> </i></a>
+                </div>
+            </div>
+        </div>
         <!-- Best Deals List -->
         <div class="col-xxl">
-            <div class="card">
+            <div class="card p-2">
                 <h5 class="card-header">Best Deals List</h5>
                 <div class="table-responsive text-nowrap">
                     <table class="table">
@@ -89,11 +99,9 @@
                             @endforeach
                         </tbody>
                     </table>
-                    {{ $best_deals->links() }}
+                    <div> {{ $best_deals->links() }} </div>
                 </div>
-                <div class="bg-light mt-3 mb-3 mx-2 px-3 text-end">
-                    <a href="{{ route('best_deals.create') }}" class="btn btn-primary btn-m">Add <i class="fa fa-plus" style="font-size:14px;color:white; padding-left:1px;"></i></a>
-                </div>
+                
             </div>
         </div>
     </div>
