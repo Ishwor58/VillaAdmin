@@ -11,11 +11,11 @@
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
-                      <li><a href="/" class="active">Home</a></li>
-                      <li><a href="/properties" >Properties</a></li>
-                      <li><a href="/property-details">Property Details</a></li>
-                      <li><a href="/contact">Contact Us</a></li>
-                      <li><a href="/schedule-visit"><i class="fa fa-calendar"></i> Schedule a visit</a></li>
+                      <li ><a href="/" class="">Home</a></li>
+                      <li><a href="/properties" class="">Properties</a></li>
+                      <li><a href="/property-details" class="">Property Details</a></li>
+                      <li><a href="/contact" class="">Contact Us</a></li>
+                      <li><a href="/schedule-visit" class=""><i class="fa fa-calendar"></i> Schedule a visit</a></li>
                   </ul>   
                     <a class='menu-trigger'>
                         <span>Menu</span>
@@ -27,3 +27,4 @@
     </div>
   </header>
   <!-- ***** Header Area End ***** -->
+

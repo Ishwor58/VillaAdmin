@@ -74,8 +74,9 @@
 
           <ul class="menu-inner py-1">
             <!-- Dashboard -->
-            <li class="menu-item active ">
-              <a href="{{route ('files.index')}}" class="menu-link">
+            <li class="menu-item">
+              {{--  route can be called only after giving name  --}}
+              <a href="{{ route ('dashboard')}}" class="menu-link" onmouseover="this.style.backgroundColor='#e7e7ff';" onmouseout="this.style.backgroundColor='white';">
                 <i class="menu-icon tf-icons bx bxs-dashboard"></i>
              
                 <div data-i18n="Analytics">Dashboard</div>
@@ -87,19 +88,19 @@
             <li class="menu-header small text-uppercase ">
               <span class="menu-header-text  ">Pages</span>
             </li>
-            <li class="menu-item ">
-              <a href="javascript:void(0);" class="menu-link menu-toggle">
+            <li class="menu-item "  >
+              <div class="menu-link menu-toggle " onmouseover="this.style.backgroundColor='#e7e7ff';" onmouseout="this.style.backgroundColor='white';">
                 <i class="menu-icon tf-icons bx bx-dock-top"></i>
-                <div data-i18n="Account Settings">File manager</div>
-              </a>
-              <ul class="menu-sub">
+                <div data-i18n="Account Settings" >File manager</div>
+              </div>
+              <ul class="menu-sub " >
                 <li class="menu-item">
-                  <a href="{{route ('files.create')}}" class="menu-link">
+                  <a href="{{route ('files.create')}}" class="menu-link ">
                     <div data-i18n="Account">create</div>
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a href="{{route ('files.index')}}" class="menu-link">
+                  <a href="{{route ('files.index')}}" class="menu-link ">
                     <div data-i18n="Notifications">index</div>
                   </a>
                 </li>
@@ -109,7 +110,7 @@
 
 
             <li class="menu-item">
-              <a href="javascript:void(0);" class="menu-link menu-toggle">
+              <a href="javascript:void(0);" class="menu-link menu-toggle" onmouseover="this.style.backgroundColor='#e7e7ff';" onmouseout="this.style.backgroundColor='white';">
                 <i class='menu-icon tf-icons bx bx-carousel'></i>
                   <div data-i18n="Account Settings">Carousel</div>
               </a>
@@ -131,7 +132,7 @@
 
           
             <li class="menu-item">
-              <a href="javascript:void(0);" class="menu-link menu-toggle">
+              <a href="javascript:void(0);" class="menu-link menu-toggle" onmouseover="this.style.backgroundColor='#e7e7ff';" onmouseout="this.style.backgroundColor='white';">
                 <i class='menu-icon tf-icons bx bx-info-square' ></i>
                 <div data-i18n="Account Settings">About</div>
               </a>
@@ -152,7 +153,7 @@
 
             
             <li class="menu-item">
-              <a href="javascript:void(0);" class="menu-link menu-toggle">
+              <a href="javascript:void(0);" class="menu-link menu-toggle" onmouseover="this.style.backgroundColor='#e7e7ff';" onmouseout="this.style.backgroundColor='white';">
                {{-- <i class=' menu-icon bx bxl-facebook ' style="padding-left: -10px; border: 3px solid grey "></i> --}}
                <div style="padding-left:2px; margin-right:-2px;">              
                  <i class=" fa-solid fa-f facts"></i></div>
@@ -174,7 +175,7 @@
             </li>
 
              <li class="menu-item">
-              <a href="javascript:void(0);" class="menu-link menu-toggle">
+              <a href="javascript:void(0);" class="menu-link menu-toggle" onmouseover="this.style.backgroundColor='#e7e7ff';" onmouseout="this.style.backgroundColor='white';">
                 <i class="menu-icon tf-icons bx bx-building-house "></i>
                 <div data-i18n="Account Settings">Property</div>
               </a>
@@ -196,7 +197,7 @@
        
 
              <li class="menu-item">
-              <a href="javascript:void(0);" class="menu-link menu-toggle">
+              <a href="javascript:void(0);" class="menu-link menu-toggle" onmouseover="this.style.backgroundColor='#e7e7ff';" onmouseout="this.style.backgroundColor='white';">
                 <i class="menu-icon tf-icons bx bxs-hot" style="color:#74879c"></i>
                 <div data-i18n="Account Settings">Best deals</div>
               </a>
@@ -215,7 +216,7 @@
               </ul>
             </li>
              <li class="menu-item">
-              <a href="javascript:void(0);" class="menu-link menu-toggle">
+              <a href="javascript:void(0);" class="menu-link menu-toggle" onmouseover="this.style.backgroundColor='#e7e7ff';" onmouseout="this.style.backgroundColor='white';">
                 <i class="menu-icon tf-icons bx bx-cog"></i>
                 <div data-i18n="Account Settings">Site Configs</div>
               </a>

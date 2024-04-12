@@ -1,13 +1,26 @@
 (function ($) {
 	
 	"use strict";
+	
+	$(document).ready(function() {
+        // Get the current URL path
+        var path = window.location.pathname;
 
+        // Find the corresponding menu item and add the 'active' class
+        $('.nav a').each(function() {
+            var href = $(this).attr('href');
+            if (path === href || (path !== '/' && href !== '/' && path.startsWith(href))) {
+                $(this).addClass('active');
+            }
+        });
+    });
 	// Page loading animation
 	$(window).on('load', function() {
 
         $('#js-preloader').addClass('loaded');
 
     });
+
 
 
 	$(window).scroll(function() {
@@ -121,6 +134,9 @@
 		});
 	});
     
+	
+	
+   
 
 
 })(window.jQuery);

@@ -40,6 +40,7 @@ Route::get('/dashboard', function () {
     return view('Villa.Admin.index');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
+
 Route::middleware('auth')->group(function () {
 
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
@@ -51,6 +52,7 @@ Route::prefix('admin')->middleware('auth')->group(function(){
     Route::get('/', function () {
         return view('Villa.Admin.index');
     });
+    
 
     Route::resource('files', 'App\Http\Controllers\FileController');
     Route::resource('carousels', 'App\Http\Controllers\CarouselController');

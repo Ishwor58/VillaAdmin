@@ -141,5 +141,7 @@
   <script src="{{asset('frontend/assets/js/counter.js')}}"></script>
   <script src="{{asset('frontend/assets/js/custom.js')}}"></script>
 
+  
+ 
   </body>
 </html>
