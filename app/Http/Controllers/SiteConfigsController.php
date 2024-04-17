@@ -38,7 +38,7 @@ class SiteConfigsController extends Controller
                
                 'site_key' => 'required',
                 
-                'site_value' => 'required|max:100',
+                'site_value' => 'required',
             ]
         );
         
@@ -82,7 +82,7 @@ class SiteConfigsController extends Controller
                
                 'site_key' => 'required',
                 
-                'site_value' => 'required|max:100',
+                'site_value' => 'required',
             ]
         );
         

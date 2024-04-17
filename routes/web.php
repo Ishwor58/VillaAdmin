@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\FrontendController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -7,32 +8,27 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route::get('/', function () {
-    return view('Villa.index');
-});
+// 
 
-Route::get('/property-details', function () {
-    return view('Villa.property-details');
-});
+Route::get('/', [FrontendController::class, 'index']);
+Route::get('/properties', [FrontendController::class, 'properties'])->name('properties');
+Route::get('/property-details/{id}', [FrontendController::class, 'propertyDetail'])->name('property-details');
+Route::get('/contact', [FrontendController::class, 'contact'])->name('contact');
 
-Route::get('/properties', function () {
-    return view('Villa.properties');
-});
 
-Route::get('/contact', function () {
-    return view('Villa.contact');
-});
+
+
 Route::get('/schedule-visit', function () {
     return view('Villa.schedule-visit');
 });
+
+
+
 Route::get('/admin', function () {
     return view('Villa.Admin.index');
 });
 
 
- Route::get('/admin/file/create', function () {
-    return view('Villa.Admin.File.create');
- });
 
 
 

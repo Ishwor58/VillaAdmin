@@ -31,7 +31,7 @@
                                         </span>
                                         <input type="text" class="form-control" id="basic-icon-default-site_key"
                                             placeholder="site_key" aria-label="site_key"
-                                            aria-describedby="basic-icon-default-site_key" name="site_key"  value="{{ $siteconfig -> site_key}}"/>
+                                            aria-describedby="basic-icon-default-site_key" name="site_key"  value="{{ $siteconfig -> site_key}}" @readonly(true)/>
                                     </div>
                                 </div>
                             </div>
