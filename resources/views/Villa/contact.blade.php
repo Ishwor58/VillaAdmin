@@ -83,7 +83,8 @@
         </div>
       </div>
       <div class="col-lg-6">
-        <form id="contact-form" action="" method="post">
+        <form id="contact-form" method="POST" enctype="multipart/form-data" action="{{ route('contacts.store') }}">
+          @csrf
           <div class="row">
             <div class="col-lg-12">
               <fieldset>
@@ -118,6 +119,7 @@
           </div>
         </form>
       </div>
+      
       <div class="col-lg-12">
         <div id="map">
           @foreach ( $site_config as $set )

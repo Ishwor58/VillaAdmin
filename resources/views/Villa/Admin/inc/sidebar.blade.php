@@ -88,7 +88,7 @@
             <li class="menu-header small text-uppercase ">
               <span class="menu-header-text  ">Pages</span>
             </li>
-            <li class="menu-item "  >
+            <li class="menu-item {{ request()->is('admin/files*') ? 'active' : '' }}"  >
               <div class="menu-link menu-toggle " onmouseover="this.style.backgroundColor='#e7e7ff';" onmouseout="this.style.backgroundColor='white';">
                 <i class="menu-icon tf-icons bx bx-dock-top"></i>
                 <div data-i18n="Account Settings" >File manager</div>
@@ -109,7 +109,7 @@
             </li>
 
 
-            <li class="menu-item">
+            <li class="menu-item {{ request()->is('admin/carousels*') ? 'active' : '' }}">
               <a href="javascript:void(0);" class="menu-link menu-toggle" onmouseover="this.style.backgroundColor='#e7e7ff';" onmouseout="this.style.backgroundColor='white';">
                 <i class='menu-icon tf-icons bx bx-carousel'></i>
                   <div data-i18n="Account Settings">Carousel</div>
@@ -131,7 +131,7 @@
          
 
           
-            <li class="menu-item">
+            <li class="menu-item {{ request()->is('admin/abouts*') ? 'active' : '' }}">
               <a href="javascript:void(0);" class="menu-link menu-toggle" onmouseover="this.style.backgroundColor='#e7e7ff';" onmouseout="this.style.backgroundColor='white';">
                 <i class='menu-icon tf-icons bx bx-info-square' ></i>
                 <div data-i18n="Account Settings">About</div>
@@ -152,7 +152,7 @@
             </li>
 
             
-            <li class="menu-item">
+            <li class="menu-item {{ request()->is('admin/facts*') ? 'active' : '' }}">
               <a href="javascript:void(0);" class="menu-link menu-toggle" onmouseover="this.style.backgroundColor='#e7e7ff';" onmouseout="this.style.backgroundColor='white';">
                {{-- <i class=' menu-icon bx bxl-facebook ' style="padding-left: -10px; border: 3px solid grey "></i> --}}
                <div style="padding-left:2px; margin-right:-2px;">              
@@ -174,7 +174,7 @@
               </ul>
             </li>
 
-             <li class="menu-item">
+             <li class="menu-item {{ request()->is('admin/properties*') ? 'active' : '' }}">
               <a href="javascript:void(0);" class="menu-link menu-toggle" onmouseover="this.style.backgroundColor='#e7e7ff';" onmouseout="this.style.backgroundColor='white';">
                 <i class="menu-icon tf-icons bx bx-building-house "></i>
                 <div data-i18n="Account Settings">Property</div>
@@ -196,7 +196,7 @@
          
        
 
-             <li class="menu-item">
+             <li class="menu-item {{ request()->is('admin/best_deals*') ? 'active' : '' }}">
               <a href="javascript:void(0);" class="menu-link menu-toggle" onmouseover="this.style.backgroundColor='#e7e7ff';" onmouseout="this.style.backgroundColor='white';">
                 <i class="menu-icon tf-icons bx bxs-hot" style="color:#74879c"></i>
                 <div data-i18n="Account Settings">Best deals</div>
@@ -215,7 +215,7 @@
                 
               </ul>
             </li>
-             <li class="menu-item">
+             <li class="menu-item {{ request()->is('admin/siteconfigs*') ? 'active' : '' }}">
               <a href="javascript:void(0);" class="menu-link menu-toggle" onmouseover="this.style.backgroundColor='#e7e7ff';" onmouseout="this.style.backgroundColor='white';">
                 <i class="menu-icon tf-icons bx bx-cog"></i>
                 <div data-i18n="Account Settings">Site Configs</div>
@@ -229,6 +229,27 @@
                 <li class="menu-item">
                   <a href="{{route ('siteconfigs.index')}}" class="menu-link">
                     <div data-i18n="Notifications">index</div>
+                  </a>
+                </li>
+                
+              </ul>
+            </li>
+             <li class="menu-item {{ request()->is('admin/contacts*') ? 'active' : '' }}">
+              <a href="javascript:void(0);" class="menu-link menu-toggle" onmouseover="this.style.backgroundColor='#e7e7ff';" onmouseout="this.style.backgroundColor='white';">
+                <i class="menu-icon tf-icons bx bx-cog"></i>
+                <div data-i18n="Account Settings">messages</div>
+              </a>
+              <ul class="menu-sub">
+               
+                <li class="menu-item">
+                  <a href="{{route ('contacts.index')}}" class="menu-link">
+                    <div data-i18n="Notifications">Contact</div>
+                  </a>
+                </li>
+
+                <li class="menu-item {{ request()->is('admin/schedule_visits*') ? 'active' : '' }}">
+                  <a href="{{route ('schedule_visits.index')}}" class="menu-link">
+                    <div data-i18n="Notifications"> Schedule-visit</div>
                   </a>
                 </li>
                 

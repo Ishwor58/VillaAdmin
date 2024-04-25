@@ -144,12 +144,13 @@
 <div class="contact-page section d-flex justify-content-center ">
 
     <div class="col-lg-7  ">
-        <form id="contact-form" >
+        <form id="contact-form"  method="POST" enctype="multipart/form-data" action="{{ route('schedule_visits.store') }}" >
+            @csrf
             <div class="">
                 <div class="col-lg-12">
                     <fieldset>
                         <label for="name">Full Name</label>
-                        <input type="name" name="name" id="name" placeholder="Your Name..." autocomplete="on" required>
+                        <input type="text" name="name" id="name" placeholder="Your Name..." autocomplete="on" required>
                     </fieldset>
                 </div>
                 <div class="col-lg-12">

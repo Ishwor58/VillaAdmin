@@ -13,7 +13,8 @@
                     <ul class="nav">
                       <li ><a href="/" class="">Home</a></li>
                       <li><a href="/properties" class="">Properties</a></li>
-                      <li><a href="/property-details" class="">Property Details</a></li>
+                      <li><a href="/property-details/6" class="">Property Details</a></li>     
+                       <!-- the property details page require an id to open otherwise you would be directed with page not found -->
                       <li><a href="/contact" class="">Contact Us</a></li>
                       <li><a href="/schedule-visit" class=""><i class="fa fa-calendar"></i> Schedule a visit</a></li>
                   </ul>   
