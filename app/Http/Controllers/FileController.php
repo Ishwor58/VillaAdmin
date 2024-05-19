@@ -47,8 +47,6 @@ class FileController extends Controller
         $file->img = $fileName;
 
         $file->save();
-
-        
         return redirect('/admin/files/create')->with('message', 'Your data is submitted ');
 
     }
